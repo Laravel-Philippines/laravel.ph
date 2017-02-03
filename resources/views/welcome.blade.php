@@ -20,11 +20,10 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <header><img src="assets/LaravelHeader.png"></header>
+        <header><img src="assets/Header.png"></header>
         <section><img src="assets/Content-About.png"></section>
         <section><img src="assets/MainContent-Affiliates.png"></section>
-
-        <section><img src="assets/Content-SocialLink.png"></section>
+        <footer><img src="assets/Bottom.png"></footer>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
