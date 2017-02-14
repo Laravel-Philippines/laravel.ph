@@ -1,0 +1,21 @@
+#header {
+    background-image: url('/assets/header-pattern.png');
+    background-position: center;
+    .navbar-brand {
+        padding: $navbar-padding-vertical / 2;
+        > img {
+            height: $navbar-height - (($navbar-padding-vertical/2) * 2);
+        }
+    }
+    .navbar-nav {
+        font-weight: bold;
+        font-size: $navbar-font-size;
+    }
+    .fa-stack-1x {
+        color: $navbar-default-link-icon-color;
+    }
+    .social-icon > a {
+        padding-left: ($nav-link-padding / 2) / 2;
+        padding-top: $nav-link-padding - 4px;
+    }
+}
