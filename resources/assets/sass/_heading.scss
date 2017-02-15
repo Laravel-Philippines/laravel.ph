@@ -1,0 +1,20 @@
+#heading {
+    margin-top: $navbar-height;
+    background-color: #1b1b1b;
+    background-image: url('/assets/heading-bg-pattern.jpg');
+    background-repeat: repeat;
+    @media (min-width: $screen-md-min) {
+        padding-top: $heading-padding;
+    }
+    padding-bottom: $heading-padding * $heading-padding-multiplier;
+    .logo {
+        @media (min-width: $screen-md-min) {
+            margin-top: 163px;
+            margin-bottom: 41px;
+        }
+        height: 94px;
+    }
+    + .component {
+        @include translate(0, -$heading-padding);
+    }
+}
