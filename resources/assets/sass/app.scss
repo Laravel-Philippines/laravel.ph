@@ -1,13 +1,18 @@
 // Variables
 @import "variables";
-
-
+@import "paper_variables";
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import "bootswatch";
 
 // Fonts
 @import "font-avalon";
 
 // Components
-@import "header";
+@import "navigation";
+@import "heading";
+@import "footer";
+
+@import "components";
