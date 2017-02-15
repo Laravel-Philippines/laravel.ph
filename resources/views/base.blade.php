@@ -13,7 +13,10 @@
 </head>
 <body @yield('body-attr', '')>
 
+
     @yield('body-pre')
+
+    <div id="app">
 
     @include('templates.navigation')
 
@@ -21,7 +24,11 @@
 
     @yield('body')
 
+    @include('templates.ending')
+
     @include('templates.footer')
+
+    </div>
 
     @include('templates.scripts')
 
