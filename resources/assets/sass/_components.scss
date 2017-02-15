@@ -1,0 +1,25 @@
+.component {
+    .child-component {
+        background-color: $component-default-bg;
+        box-shadow: 0 0 10px 0 $component-default-boxshadow-color;
+        padding: ($component-padding-vertical / 2) ($component-padding-horizontal / 2);
+        margin-bottom: $component-padding-vertical;
+        @media (min-width: $screen-md-min) {
+            padding: $component-padding-vertical $component-padding-horizontal;
+        }
+    }
+    .page-header {
+        padding-bottom: $component-padding-vertical / 2;
+        margin-top: 0;
+        > h1, h2, h3, h4, h5, h6, .heading-title {
+            color: $component-default-header-color;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        > small, .subheader {
+            color: $component-default-subheader-color;
+        }
+    }
+}
+
+@import "components/meetups";
