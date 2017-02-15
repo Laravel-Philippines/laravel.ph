@@ -1,6 +1,10 @@
 
 // Body
-$body-bg: #f5f8fa;
+$body-bg: #f1f1f1;
+
+// Heading
+$heading-padding: 48px;
+$heading-padding-multiplier: 4;
 
 // Borders
 $laravel-border-color: darken($body-bg, 10%);
@@ -10,21 +14,23 @@ $panel-default-border: $laravel-border-color;
 $panel-inner-border: $laravel-border-color;
 
 // Brands
-$brand-primary: #3097D1;
+$brand-primary: #f75936;
 $brand-info: #8eb4cb;
 $brand-success: #2ab27b;
 $brand-warning: #cbb956;
-$brand-danger: #bf5329;
+$brand-danger: #f7ec36;
 
 // Typography
 $font-family-sans-serif: "Avalon", sans-serif;
 $font-size-base: 14px;
 $line-height-base: 1.6;
-$text-color: #636b6f;
+$text-color: #fff;
 $font-src: "/fonts/avalon";
+$line-height-base: 1.846;
+$line-height-computed: floor(($font-size-base * $line-height-base));
 
 // Navbar
-$navbar-default-bg: #fff;
+$navbar-default-bg: #fa3121;
 $navbar-height: 83px;
 $navbar-default-link-color: #FFF;
 $navbar-border-radius: 0;
@@ -34,11 +40,32 @@ $navbar-default-link-icon-color: #fa3121;
 
 // Buttons
 $btn-default-color: $text-color;
+$btn-font-weight: bold;
+$btn-default-color: #FFF;
+$btn-default-bg: #333333;
 
 // Inputs
 $input-border: lighten($text-color, 40%);
 $input-border-focus: lighten($brand-primary, 25%);
 $input-color-placeholder: lighten($text-color, 30%);
 
+// Page Header
+$page-header-border-color: #dbdbdb;
+
 // Panels
 $panel-default-heading-bg: #fff;
+
+// Footer
+$footer-height: 65px;
+$footer-text-height: 19px;
+$footer-font-size: $navbar-font-size;
+$footer-font-weight: bold;
+$footer-color: $navbar-default-link-color;
+
+// Components
+$component-default-bg: #FFF;
+$component-default-boxshadow-color: rgba(0, 0, 0, 0.3);
+$component-default-subheader-color: #343434;
+$component-default-header-color: $brand-primary;
+$component-padding-vertical: $line-height-computed * 2;
+$component-padding-horizontal: $line-height-computed * 4;
