@@ -1,5 +1,5 @@
 .component {
-    .child-component {
+    .component-content {
         background-color: $component-default-bg;
         box-shadow: 0 0 10px 0 $component-default-boxshadow-color;
         padding: ($component-padding-vertical / 2) ($component-padding-horizontal / 2);
@@ -19,6 +19,11 @@
         > small, .subheader {
             color: $component-default-subheader-color;
         }
+    }
+    &:last-of-type .component-content {
+        margin-bottom: 0;
+        position: relative;
+        z-index: 9;
     }
 }
 
