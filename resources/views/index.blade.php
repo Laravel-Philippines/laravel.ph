@@ -2,6 +2,8 @@
 
 @section('body')
 
-<h1>Hello World</h1>
+@include('components.meetups')
+
+@include('components.partners-affiliates')
 
 @stop
