@@ -1,0 +1,30 @@
+#footer {
+    background-image: url('/assets/navigation-pattern.png');
+    background-position: center;
+    background-color: $navbar-default-bg;
+    font-size: $footer-font-size;
+    font-weight: $footer-font-weight;
+    color: $footer-color;
+    height: $footer-height + ($footer-height / 2);
+    text-align: center;
+    @media (min-width: $screen-md-min) {
+        height: $footer-height;
+        padding: ($footer-height - $footer-text-height) / 2;
+    }
+    p {
+        margin: 0;
+        @media (min-width: $screen-md-min) {
+            height: $footer-text-height;
+        }
+    }
+    .copyright {
+        @media (min-width: $screen-md-min) {
+            text-align: left;
+        }
+    }
+    .powered-by {
+        @media (min-width: $screen-md-min) {
+            text-align: right;
+        }
+    }
+}

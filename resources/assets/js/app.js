@@ -16,5 +16,30 @@ require('./bootstrap');
 Vue.component('example', require('./components/Example.vue'));
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    mounted() {
+        $('.owl-carousel').owlCarousel({
+            items: 4,
+            margin: 16,
+            dots: true,
+            autoplay: true,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    dots: false
+                },
+                480: {
+                    items: 1,
+                    dots: false
+                },
+                768: {
+                    items: 2
+                },
+                992: {
+                    items: 4
+                }
+            }
+        })
+    }
 });
