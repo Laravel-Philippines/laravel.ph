@@ -16,14 +16,14 @@
     }
     .social-icon {
         > a {
-            @media (min-width: $screen-md-min) {
+            @media (min-width: $screen-lg-min) {
                 padding-left: ($nav-link-padding / 4) / 2;
                 padding-right: ($nav-link-padding / 4) / 2;
                 padding-top: $nav-link-padding - 4px;
             }
         }
         .fa-stack {
-            @media (max-width: $screen-md-min) {
+            @media (max-width: $screen-lg-min) {
                 display: none;
             }
         }

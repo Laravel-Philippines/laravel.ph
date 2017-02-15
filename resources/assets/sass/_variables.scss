@@ -6,6 +6,10 @@ $body-bg: #f1f1f1;
 $heading-padding: 48px;
 $heading-padding-multiplier: 4;
 
+// Ending
+$ending-padding: $heading-padding;
+$ending-padding-multiplier: $heading-padding-multiplier;
+
 // Borders
 $laravel-border-color: darken($body-bg, 10%);
 $list-group-border: $laravel-border-color;
@@ -22,7 +26,7 @@ $brand-danger: #f7ec36;
 
 // Typography
 $font-family-sans-serif: "Avalon", sans-serif;
-$font-size-base: 14px;
+$font-size-base: 13px !default;
 $line-height-base: 1.6;
 $text-color: #fff;
 $font-src: "/fonts/avalon";
@@ -69,3 +73,23 @@ $component-default-subheader-color: #343434;
 $component-default-header-color: $brand-primary;
 $component-padding-vertical: $line-height-computed * 2;
 $component-padding-horizontal: $line-height-computed * 4;
+
+// Owl Carousel Theme
+$color-base:            $brand-primary !default;
+$color-white:           #FFF !default;
+$color-gray:            #D6D6D6 !default;
+$nav-color:             $color-white !default;
+$nav-color-hover:       $color-white !default;
+$nav-font-size:         14px !default;
+$nav-rounded:           3px !default;
+$nav-margin:            5px !default;
+$nav-padding:           4px 7px !default;
+$nav-background:        $color-gray !default;
+$nav-background-hover:  $color-base !default;
+$nav-disabled-opacity:  0.5 !default;
+$dot-width:             10px !default;
+$dot-height:            10px !default;
+$dot-rounded:           30px !default;
+$dot-margin:            5px 7px !default;
+$dot-background:        $color-gray !default;
+$dot-background-active: $color-base !default;
