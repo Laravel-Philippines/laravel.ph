@@ -1,0 +1,14 @@
+#ending {
+    padding-top: $ending-padding * 4;
+    padding-bottom: $ending-padding * $ending-padding-multiplier;
+    background-color: #1b1b1b;
+    background-image: url('/assets/heading-bg-pattern.jpg');
+    background-repeat: repeat;
+    margin-top: -($ending-padding * 2);
+    * {
+        color: #FFF;
+    }
+    .fa-stack-1x {
+        color: #191919;
+    }
+}
