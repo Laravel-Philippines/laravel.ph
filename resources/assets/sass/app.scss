@@ -4,8 +4,11 @@
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "node_modules/owl.carousel/src/scss/owl.carousel";
+@import "node_modules/owl.carousel/src/scss/theme";
 
 @import "bootswatch";
+@import "owl-carousel";
 
 // Fonts
 @import "font-avalon";
@@ -13,6 +16,6 @@
 // Components
 @import "navigation";
 @import "heading";
+@import "ending";
 @import "footer";
-
 @import "components";
