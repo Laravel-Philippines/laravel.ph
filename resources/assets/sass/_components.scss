@@ -19,6 +19,9 @@
         > small, .subheader {
             color: $component-default-subheader-color;
         }
+        + div {
+            margin-bottom: $line-height-computed;
+        }
     }
     &:last-of-type .component-content {
         margin-bottom: 0;
