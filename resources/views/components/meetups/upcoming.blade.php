@@ -4,6 +4,8 @@
         <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit</small>
     </header>
 
+    <upcoming></upcoming>
+
     <button type="button" class="btn btn-block btn-primary btn-lg">SIGN ME UP</button>
 </div>
 
