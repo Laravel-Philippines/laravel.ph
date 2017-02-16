@@ -1,7 +1,12 @@
 #meetup_component {
     .btn {
         font-weight: bold;
-        // @include button-size($padding-base-vertical * 2, $padding-base-horizontal, 12px, $line-height-base, $btn-border-radius-base);
         @include button-size($padding-large-vertical * 2, $padding-large-horizontal, $font-size-base, $line-height-large, $btn-border-radius-large);
+    }
+    .media {
+        color: $component-default-subheader-color;
+    }
+    .media-heading {
+        font-weight: bold;
     }
 }
