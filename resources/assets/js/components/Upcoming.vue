@@ -1,7 +1,7 @@
 <template>
     <div class="upcoming-component">
         <div class="media">
-            <div class="media-left">
+            <div class="media-left hidden-xs">
                 <i class="fa fa-calendar fa-3x fa-fw" aria-hidden="true"></i>
             </div>
             <div class="media-body">
@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="media">
-            <div class="media-left">
+            <div class="media-left hidden-xs">
                 <i class="fa fa-map-marker fa-3x fa-fw" aria-hidden="true"></i>
             </div>
             <div class="media-body">
@@ -19,7 +19,7 @@
             </div>
         </div>
         <div class="media">
-            <div class="media-left">
+            <div class="media-left hidden-xs">
                 <i class="fa fa-comments-o fa-3x fa-fw" aria-hidden="true"></i>
             </div>
             <div class="media-body">
