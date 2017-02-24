@@ -14,28 +14,21 @@
 
         <div class="collapse navbar-collapse navigation-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">MEETUPS</a></li>
-                <li><a href="#">PARTNERS &amp; AFFILIATES</a></li>
+                <li><a href="#heading">ABOUT</a></li>
+                <li><a href="#meetup_component">MEETUPS</a></li>
+                <li><a href="#partner_affiliates_component">PARTNERS &amp; AFFILIATES</a></li>
                 <li><a href="#">CAREER OPPORTUNITIES</a></li>
+                @foreach(array_slice($connected_links, 0, 2) as $faclass => $link)
                 <li class="social-icon">
-                    <a href="#">
+                    <a href="{{ $link['url'] }}">
                         <span class="fa-stack fa-lg">
                             <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-facebook-f fa-stack-1x"></i>
+                            <i class="fa fa-stack-1x {{ $faclass }}"></i>
                         </span>
-                        <span class="hidden-md hidden-lg">FACEBOOK</span>
+                        <span class="hidden-md hidden-lg">{{ $link['name'] }}</span>
                     </a>
                 </li>
-                <li class="social-icon">
-                    <a href="#">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-twitter fa-stack-1x"></i>
-                        </span>
-                        <span class="hidden-md hidden-lg">TWITTER</span>
-                    </a>
-                </li>
+                @endforeach
             </ul>
         </div>
     </div>
