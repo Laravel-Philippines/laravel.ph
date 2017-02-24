@@ -6,6 +6,6 @@
 
     <upcoming></upcoming>
 
-    <button type="button" class="btn btn-block btn-primary btn-lg">SIGN ME UP</button>
+    <a href="https://www.meetup.com/Laravel-Philippines/quick_join/?eventId=237516402&joinFrom=event&response=3" class="btn btn-block btn-primary btn-lg">SIGN ME UP</a>
 </div>
 
