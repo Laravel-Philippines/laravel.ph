@@ -9,4 +9,24 @@
     .media-heading {
         font-weight: bold;
     }
+    .upcoming-component {
+        @media (min-width: $screen-md-min) {
+            height: 375px;
+        }
+    }
+    .previous-component {
+        .media-left img {
+            width: 80px;
+            height: 45px;
+            background-image: url('/assets/default-event.jpg');
+            background-position: center center;
+            background-size: cover;
+        }
+        .media-heading {
+            height: 22px;
+            color: $component-default-subheader-color;
+            display: block;
+            overflow: hidden;
+        }
+    }
 }
