@@ -4,5 +4,7 @@
         <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit</small>
     </header>
 
-    <button type="button" class="btn btn-block btn-default btn-lg">VIEW ALL VIDEOS</button>
+    <previous></previous>
+
+    <a href="https://www.meetup.com/Laravel-Philippines/events/past/" target="_blank" class="btn btn-block btn-default btn-lg">VIEW PAST MEETUPS</a>
 </div>

@@ -14,6 +14,7 @@ require('./bootstrap');
  */
 
 Vue.component('upcoming', require('./components/Upcoming.vue'));
+Vue.component('previous', require('./components/Previous.vue'));
 
 const app = new Vue({
     el: '#app',
