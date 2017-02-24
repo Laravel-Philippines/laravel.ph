@@ -44,7 +44,7 @@ export default {
                 link: '',
                 venue: {
                     address_1: '...',
-                    name: ''
+                    name: 'Loading...'
                 }
             }
         }
@@ -89,12 +89,13 @@ export default {
                 'photo-host': 'public',
                 page: 1,
                 status: 'upcoming',
+                fields: 'simple_html_description',
                 key: '4e4f73451216b2be7a434b357cd74'
             },
             method: 'jsonp'
         })
         .then(response => {
-            console.log(response.body.data[0])
+            // console.log(response.body.data[0])
             this.data = response.body.data[0];
         })
     }
