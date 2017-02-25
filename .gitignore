@@ -8,3 +8,5 @@ Homestead.yaml
 .env
 /.phpintel
 mix-manifest.json
+/public/js/app.js
+/public/owl.video.play.png
