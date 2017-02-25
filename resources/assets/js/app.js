@@ -18,6 +18,36 @@ Vue.component('previous', require('./components/Previous.vue'));
 
 const app = new Vue({
     el: '#app',
+    methods: {
+        getEvents(status) {
+            _defaultParams = {
+                sign: true,
+                'photo-host': 'public',
+                fields: 'simple_html_description, photo_album',
+                key: '4e4f73451216b2be7a434b357cd74',
+            }
+            status = (['recent_past', 'next_upcoming'].indexOf(status) > -1) ? { scroll: status } : { status: status, desc: true }
+
+            return this.$http({
+                url: 'https://api.meetup.com/Laravel-Philippines/events',
+                params: Object.assign(_defaultParams, status),
+                method: 'jsonp'
+            })
+        },
+        getDay(time) {
+            const t = new Date(parseInt(time))
+            const _month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+            const _days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+
+            return {
+                month: _month[t.getMonth()],
+                date: t.getDate(),
+                year: t.getFullYear(),
+                day: _days[t.getDay()],
+                _date: t
+            }
+        }
+    },
     mounted() {
         $('.owl-carousel').owlCarousel({
             items: 4,
