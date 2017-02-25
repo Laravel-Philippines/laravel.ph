@@ -37,7 +37,7 @@ return [
 
     'meetup' => [
         'model' => App\Event::class,
-        'key' => env('MEETUP_KEY'),
+        'key' => env('MEETUP_API_KEY'),
         'consumer_key' => env('MEETUP_CONSUMER_KEY'),
         'consumer_secret' => env('MEETUP_CONSUMER_SECRET'),
         'redirect_uri' => '/meetup/authorized',
