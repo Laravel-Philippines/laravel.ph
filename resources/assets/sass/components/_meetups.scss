@@ -9,9 +9,10 @@
     .media-heading {
         font-weight: bold;
     }
-    .upcoming-component {
+    .upcoming-component, .previous-component {
         @media (min-width: $screen-md-min) {
             height: 375px;
+            overflow: auto;
         }
     }
     .previous-component {
