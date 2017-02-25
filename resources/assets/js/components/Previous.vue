@@ -24,11 +24,9 @@ export default {
     },
     methods: {
         getDay(time) {
-            var t = new Date(parseInt(time))
-            var _month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-            var _days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+            const d = this.$parent.getDay(time)
 
-            return _month[t.getMonth()] + ' ' + t.getDate() + ', ' + t.getFullYear()
+            return d.month + ' ' + d.date + ', ' + d.year
         },
         getImage(evt) {
             if (evt.hasOwnProperty('photo_album')) {
@@ -46,17 +44,7 @@ export default {
         }
     },
     mounted() {
-        this.$http({
-            url: 'https://api.meetup.com/Laravel-Philippines/events',
-            params: {
-                sign: true,
-                'photo-host': 'public',
-                status: 'past',
-                fields: 'simple_html_description, photo_album',
-                key: '4e4f73451216b2be7a434b357cd74'
-            },
-            method: 'jsonp'
-        })
+        this.$parent.getEvents('past')
         .then(response => {
             console.log('PREVIOUS', response.body.data)
             this.previouses = response.body.data;

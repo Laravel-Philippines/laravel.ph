@@ -51,12 +51,12 @@ export default {
     },
     computed: {
         fullDate() {
-            var d = this.getDay(this.data.time);
+            var d = this.$parent.getDay(this.data.time);
 
             return d.month + ' ' + d.date + ', ' + d.year;
         },
         dayAndTime() {
-            var d = this.getDay(this.data.time);
+            var d = this.$parent.getDay(this.data.time);
 
             return d.day + ' | ' + d._date.toLocaleTimeString();
         },
@@ -67,36 +67,29 @@ export default {
         }
     },
     methods: {
-        getDay(time) {
-            var t = new Date(parseInt(time))
-            var _month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-            var _days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
-
-            return {
-                month: _month[t.getMonth()],
-                date: t.getDate(),
-                year: t.getFullYear(),
-                day: _days[t.getDay()],
-                _date: t
-            }
+        getRecent() {
+            this.$parent.getEvents('recent_past')
+            .then(response => {
+                console.log('RECENT', response.body.data)
+                // Brute force
+                document.getElementById('meetup_component').getElementsByClassName('upcoming')[0].getElementsByTagName('h3')[0].firstChild.textContent = 'RECENT '
+                this.data = response.body.data[0];
+            })
         }
     },
     mounted() {
-        this.$http({
-            url: 'https://api.meetup.com/Laravel-Philippines/events',
-            params: {
-                sign: true,
-                'photo-host': 'public',
-                page: 1,
-                status: 'upcoming',
-                fields: 'simple_html_description',
-                key: '4e4f73451216b2be7a434b357cd74'
-            },
-            method: 'jsonp'
-        })
+        this.$parent.getEvents('next_upcoming')
         .then(response => {
-            // console.log(response.body.data[0])
-            this.data = response.body.data[0];
+            console.log('UPCOMING', response.body.data)
+            if (response.body.data.length) {
+                this.data = response.body.data[0];
+            } else {
+                console.warn('No upcoming as of the moment, lets get the recent.')
+                this.getRecent()
+            }
+
+        }, error => {
+            console.error('SOMETHING WENT WRONG')
         })
     }
 }
