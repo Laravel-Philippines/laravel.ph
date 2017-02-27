@@ -1,3 +1,7 @@
+[github]: https://github.com/Laravel-Philippines/laravel.ph
+[contributing]: blob/master/contributing.md
+[website]: http://laravelph.anih.us
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 <p align="center"><strong>PHILIPPINES</strong></p>
 
@@ -45,6 +49,13 @@ getEvents(status) {
 
 Lastly compiled it using `npm run (production|watch|dev|hot)`
 
+## Contribute
+Please read through our [contributing guidelines][contributing].
+
+## Suggestions
+Create an issue [here](issues).
+
 
 ## Website
-You can visit our temporary website http://laravelph.anih.us
+You can visit our temporary [website].
+
