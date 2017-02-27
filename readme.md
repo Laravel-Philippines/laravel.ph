@@ -1,5 +1,4 @@
 [github]: https://github.com/Laravel-Philippines/laravel.ph
-[contributing]: blob/master/contributing.md
 [website]: http://laravelph.anih.us
 
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
@@ -50,10 +49,10 @@ getEvents(status) {
 Lastly compiled it using `npm run (production|watch|dev|hot)`
 
 ## Contribute
-Please read through our [contributing guidelines][contributing].
+Please read through our [contributing guidelines](contributing.md).
 
 ## Suggestions
-Create an issue [here](issues).
+Create an issue [here](https://github.com/Laravel-Philippines/laravel.ph/issues).
 
 
 ## Website
