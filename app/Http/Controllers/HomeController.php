@@ -14,10 +14,22 @@ class HomeController extends Controller
     ];
 
     protected $connectedLinks = [
-        'fa-facebook-f' => 'https://www.facebook.com/groups/laravelph',
-        'fa-twitter' => 'https://twitter.com/laravelph',
-        'fa-github' => 'https://github.com/Laravel-Philippines',
-        'fa-meetup' => 'https://www.meetup.com/Laravel-Philippines'
+        'fa-facebook-f' => [
+            'name' => 'FACEBOOK',
+            'url' => 'https://www.facebook.com/groups/laravelph',
+        ],
+        'fa-twitter' => [
+            'name' => 'TWITTER',
+            'url' => 'https://twitter.com/laravelph',
+        ],
+        'fa-github' => [
+            'name' => 'GITHUB',
+            'url' => 'https://github.com/Laravel-Philippines',
+        ],
+        'fa-meetup' => [
+            'name' => 'MEETUP',
+            'url' => 'https://www.meetup.com/Laravel-Philippines',
+        ],
     ];
 
     public function index()

@@ -1,7 +1,33 @@
 #meetup_component {
     .btn {
         font-weight: bold;
-        // @include button-size($padding-base-vertical * 2, $padding-base-horizontal, 12px, $line-height-base, $btn-border-radius-base);
         @include button-size($padding-large-vertical * 2, $padding-large-horizontal, $font-size-base, $line-height-large, $btn-border-radius-large);
+    }
+    .media {
+        color: $component-default-subheader-color;
+    }
+    .media-heading {
+        font-weight: bold;
+    }
+    .upcoming-component, .previous-component {
+        @media (min-width: $screen-md-min) {
+            height: 375px;
+            overflow: auto;
+        }
+    }
+    .previous-component {
+        .media-left img {
+            width: 80px;
+            height: 45px;
+            background-image: url('/assets/default-event.jpg');
+            background-position: center center;
+            background-size: cover;
+        }
+        .media-heading {
+            height: 22px;
+            color: $component-default-subheader-color;
+            display: block;
+            overflow: hidden;
+        }
     }
 }

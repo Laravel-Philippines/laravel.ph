@@ -11,4 +11,11 @@
     .fa-stack-1x {
         color: #191919;
     }
+    .social-icons {
+        a:hover, a:focus {
+            .fa-stack-1x {
+                color: $brand-primary;
+            }
+        }
+    }
 }

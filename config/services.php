@@ -35,4 +35,12 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'meetup' => [
+        'model' => App\Event::class,
+        'key' => env('MEETUP_API_KEY'),
+        'consumer_key' => env('MEETUP_CONSUMER_KEY'),
+        'consumer_secret' => env('MEETUP_CONSUMER_SECRET'),
+        'redirect_uri' => '/meetup/authorized',
+    ]
+
 ];
