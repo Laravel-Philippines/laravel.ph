@@ -57,5 +57,5 @@ Create an issue [here](https://github.com/Laravel-Philippines/laravel.ph/issues)
 
 
 ## Website
-You can visit our temporary [website].
+You can visit our [website].
 
