@@ -20,7 +20,7 @@
                 <li><a href="#">CAREER OPPORTUNITIES</a></li>
                 @foreach(array_slice($connected_links, 0, 2) as $faclass => $link)
                 <li class="social-icon">
-                    <a href="{{ $link['url'] }}">
+                    <a href="{{ $link['url'] }}" target="_blank">
                         <span class="fa-stack fa-lg">
                             <i class="fa fa-circle fa-stack-2x"></i>
                             <i class="fa fa-stack-1x {{ $faclass }}"></i>
