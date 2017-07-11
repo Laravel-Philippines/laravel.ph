@@ -36,4 +36,9 @@ class HomeController extends Controller
     {
         return view('index')->with(['affiliates' => $this->affiliates, 'connected_links' => $this->connectedLinks]);
     }
+
+    public function slack()
+    {
+        return redirect('https://laravelph.slack.com');
+    }
 }
