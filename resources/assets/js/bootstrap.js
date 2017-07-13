@@ -46,4 +46,4 @@ require('vue-resource');
 //     key: 'your-pusher-key'
 // });
 
-import 'owl.carousel';
+

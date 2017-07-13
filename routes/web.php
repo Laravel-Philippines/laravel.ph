@@ -12,6 +12,4 @@
 */
 
 Route::get('/', ['as' => 'index', 'uses' => 'HomeController@index']);
-Route::get('old', function () {
-    return view('welcome');
-});
+Route::get('slack', ['as' => 'slack', 'uses' => 'HomeController@slack']);
