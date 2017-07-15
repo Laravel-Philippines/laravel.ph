@@ -1,3 +1,4 @@
-.owl-carouse .owl-video-play-icon {
-    background: url("/img/owl.video.play.png") no-repeat;
-}
+@import "~owl.carousel/src/scss/core";
+@import "~owl.carousel/src/scss/animate";
+@import "~owl.carousel/src/scss/autoheight";
+@import "~owl.carousel/src/scss/lazyload";

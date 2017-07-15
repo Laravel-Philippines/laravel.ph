@@ -26,7 +26,7 @@ const app = new Vue({
                 sign: true,
                 'photo-host': 'public',
                 fields: 'simple_html_description, photo_album',
-                key: 'INSERT_YOUR_MEETUP_API_KEY_HERE',
+                key: '{{ MEETUP_API_KEY }}',
             }
             status = (['recent_past', 'next_upcoming'].indexOf(status) > -1) ? { scroll: status } : { status: status, desc: true }
 
