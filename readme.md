@@ -1,5 +1,8 @@
 [github]: https://github.com/Laravel-Philippines/laravel.ph
 [website]: http://laravel.ph
+[slack]: http://laravel.ph/slack
+[Facebook Community]: https://www.facebook.com/groups/laravelph/
+[Meetup.com]: https://www.meetup.com/Laravel-Philippines
 [Laracasts]: https://laracasts.com
 
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
@@ -33,21 +36,14 @@ Laravel has the most extensive and thorough documentation and video tutorial lib
 If you're not in the mood to read, [Laracasts] contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
 
 ## Compile assets
-Get your Meetup key from https://secure.meetup.com/meetup_api/key/ then add to `key` from `resources\assets\js\app.js`
-``` js
-...
-getEvents(status) {
-    _defaultParams = {
-        sign: true,
-        'photo-host': 'public',
-        fields: 'simple_html_description, photo_album',
-        key: 'INSERT_YOUR_MEETUP_API_KEY_HERE',
-    }
-}
-...
+Get your Meetup key from https://secure.meetup.com/meetup_api/key/ and add it to your `.env` to `MEETUP_API_KEY` key, then run the following command:
+
+```
+npm run compile
 ```
 
-Lastly compiled it using `npm run (production|watch|dev|hot)`
+After you compile, it will create an `app.js` to `resources/assets/js` directory.
+Lastly compile using `npm run (production|watch|dev|hot)`
 
 ## Contribute
 Please read through our [contributing guidelines](contributing.md).
@@ -55,7 +51,14 @@ Please read through our [contributing guidelines](contributing.md).
 ## Suggestions
 Create an issue [here](https://github.com/Laravel-Philippines/laravel.ph/issues).
 
-
 ## Website
-You can visit our [website].
+You can now visit our [website].
 
+## Slack
+You can also join to our official [slack].
+
+## Facebook
+Kindly join to our still growing [Facebook Community].
+
+## Events
+We post events our official [Meetup.com], please come and join us!
