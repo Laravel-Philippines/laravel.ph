@@ -12,5 +12,4 @@ const { mix } = require('laravel-mix');
  */
 
 mix.js('resources/assets/js/app.js', 'public/js')
-   .copy('node_modules/owl.carousel/src/img/owl.video.play.png', 'public/img')
    .sass('resources/assets/sass/app.scss', 'public/css');
