@@ -1,9 +1,6 @@
 #PinoyLaravel TODO list
 
-Btw, We are needing dedicated individuals who will: 
-
-In addition, we are looking for a people-oriented technical-inclined leader for 2019 in coordinating meetups, meeting possible community partners, and keeping volunteers happy
-
+Btw, We are needing dedicated individuals who will work on the following: 
 ## TODO List
 
 This list is not complete, but feel free to add more by filing a PR.
@@ -22,3 +19,7 @@ The above is very easy to do, but here are more things we have in plan:
 - [ ] Find/ create a list of new speakers for future meetups
 
 File a PR If you have ideas or ping me on facebook to consult on your idea for the community
+
+
+*In addition, we are looking for a people-oriented technical-inclined leader for 2019 in coordinating meetups, meeting possible community partners, and keeping volunteers happy*
+
