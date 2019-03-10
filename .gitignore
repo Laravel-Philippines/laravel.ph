@@ -13,3 +13,4 @@ mix-manifest.json
 /public/css/app.css
 /public/fonts/vendor
 /public/images/vendor
+package-lock.json
