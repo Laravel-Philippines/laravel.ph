@@ -1,7 +1,6 @@
 #heading {
     margin-top: $navbar-height;
-    background-color: #1b1b1b;
-    background-image: url('/assets/heading-bg-pattern.jpg');
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4wMKDBcGkeOB/wAAAM9JREFUOMvFksFqwkAQhr/ZS4hubNP2Jhg3bV/HB/Xo6xTdBtGTByVrbC6dnoSgRkUpzmngG5hh/g/uLAFYjsfpz2c+1eQ5BZDdNkS+cP3RaAWwmEzeapd5jbv2kBuA+n34pb00RQRE0I61tctm+y21y7x2rD3FDcDv08vr4Wkad5NGb9u4ufcHBkDCZn30nN22bPShjRuA6Hv+IVVZogqqSBVC5It8Pxz5wkkVQht/bMmlnK/zwA1mbTlf5YHGNnmwB43Mb/PAF/m5nP/Vgz+Td6AwqU1ymgAAAABJRU5ErkJggg==);
     background-repeat: repeat;
     @media (min-width: $screen-md-min) {
         padding-top: $heading-padding;
