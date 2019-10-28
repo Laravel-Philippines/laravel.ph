@@ -1,0 +1,3 @@
+[submodule "laravel.ph-frontend"]
+	path = laravel.ph-frontend
+	url = git@github.com:jpalala/laravel.ph-frontend.git
